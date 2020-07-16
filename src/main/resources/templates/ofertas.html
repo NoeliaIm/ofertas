@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ofertas</title>
+</head>
+<body>
+<h1>ofertas de hoy</h1>
+
+<h3 th:text="'Producto '+${Oferta}"></h3>
+<h3 th:text="'Fecha de inicio '+${fechaInicio}"></h3>
+<h3 th:text="'Precio '+${precio}+'€'"></h3>
+<h3 th:text="'Vigente hasta '+${tipo}"></h3>
+</body>
+</html>

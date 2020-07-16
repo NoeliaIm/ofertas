@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Detalle</title>
+<link th:href="@{/style.css}" rel="stylesheet">
+
+</head>
+<body>
+<h1>Detalle de la oferta</h1>
+
+<h3 th:text="'Producto: '+${detalle.producto}"></h3>
+<h3 th:text="'Fecha de inicio: '+${detalle.fechaInicio}"></h3>
+<h3 th:text="'Vigente hasta: '+${detalle.tipo}"></h3>
+<h3 th:text="'Precio: '+${detalle.precio}+'€'"></h3>
+</body>
+</html>

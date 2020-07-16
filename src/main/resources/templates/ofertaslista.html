@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado de ofertas</title>
+</head>
+<body>
+<h2>Listado de ofertas</h2>
+<h3>Formato tabla</h3>
+<table style="border: 1px solid black">
+<tr th:each="eachOferta: ${lista}">
+<td style="border:2px dotted red" th:text="${eachOferta}">
+</td>
+</tr>
+</table>
+<br>
+<h3>Fomato lista ordenada</h3>
+<ol>
+<li th:each="eachOferta: ${lista}" th:text="${eachOferta}">
+</li>
+</ol>
+</body>
+</html>
